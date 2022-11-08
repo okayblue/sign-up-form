@@ -1,9 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
-body {
-  background-color: blueviolet;
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .logo_text {
   font-family: 'Acme', sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 70px;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100vh;
+}
+
+.left {
+  background-image: url("halie-west-25xggax4bSA-unsplash.jpg");
+  background-size: cover;
+  flex: 1 1 auto;
+}
+
+.right {
+  background-color: rgb(255, 255, 255);
+  flex: 4 3 auto;
+}
+
+.logo {
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 200px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
 }
