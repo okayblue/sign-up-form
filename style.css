@@ -14,23 +14,6 @@ body {
   font-size: 1.5rem;
 }
 
-input,
-textarea,
-select,
-button {
-  width: auto;
-  max-width: 200px;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.logo_text {
-  font-family: 'Acme', sans-serif;
-  color: rgb(255, 255, 255);
-  font-size: 7rem;
-}
-
 .container {
   display: flex;
   flex-flow: row nowrap;
@@ -54,9 +37,16 @@ button {
   justify-content: center;
 }
 
+.logo_text {
+  font-family: 'Acme', sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 6.5rem;
+}
+
 .logo {
   margin-top: 200px;
   background: rgba(0, 0, 0, 0.5);
+  padding: 5px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -64,7 +54,9 @@ button {
 }
 
 .logo img {
-  width: 100px;
+  width: 100%;
+  min-width: 50px;
+  max-width: 90px;
   height: auto;
 }
 
@@ -74,15 +66,26 @@ button {
   margin-bottom: 5px;
 }
 
+.intro {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.right p {
+  padding: 10px 0px 10px 50px;
+}
+
+/* form styles */
 .form-container {
   background: rgb(255, 255, 255);
-  margin: 5px 0px 5px 0px;
+  padding: 20px 0px 20px 0px;
+  margin: 30px 0px 20px 0px;
   box-shadow: 2px 2px 4px rgb(131, 131, 131);
 }
 
 .signup-form {
   margin-left: 50px;
-  padding: 20px 0px 20px 0px;
+  padding: 0 0px 20px 0px;
 }
 
 .form-item {
@@ -95,7 +98,7 @@ button {
   border: none;
   display: flex;
   flex-flow: row wrap;
-  padding: 5px 0px 5px 0px;
+  padding: 0px;
   justify-content: flex-start;
 }
 
@@ -111,38 +114,46 @@ button {
   color: rgb(255, 255, 255);
 }
 
-.right p {
-  padding: 10px 0px 10px 50px;
-}
-
 .signup-form label {
   font-size: 1.4rem;
   font-weight: 600;
-  color:rgb(37, 37, 37);
+  color:rgb(59, 59, 59);
+  padding-top: 20px;
 }
 
+/* input */
 .signup-form input {
   outline: none !important;
-  border: 1px solid rgb(167, 167, 167);
+  border: 2px solid rgb(167, 167, 167);
   border-radius: 5px;
   padding: 4px;
 }
 
 input:focus {
   outline: none !important;
-  border: 1px solid rgb(69, 187, 255);
-}
-
-.intro {
-  font-size: 2rem;
-  font-weight: 600;
+  border: 2px solid rgb(0, 126, 199);
+  box-shadow: 2px 2px 4px rgb(167, 167, 167);
 }
 
 .error {
   outline: none !important;
-  border: 1px solid rgb(255, 69, 69);
+  border: 2px solid rgb(255, 69, 69);
 }
 
+/* links */
 .login {
   margin-top: 18px;
+}
+
+.login a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login a:link, a:visited {
+  color:#596D48;
+}
+
+.login a:hover {
+  color:#1c2b0f;
 }
