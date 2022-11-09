@@ -13,7 +13,7 @@
 
 .container {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   height: 100vh;
 }
 
@@ -21,16 +21,22 @@
   background-image: url("halie-west-25xggax4bSA-unsplash.jpg");
   background-size: cover;
   flex: 1 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
 }
 
 .right {
-  background-color: rgb(255, 255, 255);
-  flex: 4 3 auto;
+  background-color: rgb(230, 230, 230);
+  flex: 2 2 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
 }
 
 .logo {
-  background: rgba(0, 0, 0, 0.5);
   margin-top: 200px;
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -40,4 +46,15 @@
 .logo img {
   width: 100px;
   height: auto;
+}
+
+.credit {
+  align-self: center;
+  color: rgb(255, 255, 255);
+  margin-bottom: 5px;
+}
+
+form {
+  display: flex;
+  flex-flow: column;
 }

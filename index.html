@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
   <title>Sign Up</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <main class="container">
     <div class="left">
@@ -14,12 +16,37 @@
         <img src="odin-lined.png" alt="odin logo">
         <h1 class="logo_text">ODIN</h1>
       </div>
+      <p class="credit">Photo by Halie West on unsplash</p>
     </div>
     <div class="right">
-      <div class="form">
+      <p>Sign up!</p>
 
-      </div>
+      <form action="" method="">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name">
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="phone_number">Phone Number:</label>
+        <input type="tel" id="phone_number" name="phone_number">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password">
+
+        <button type="submit">Create account</button>
+
+      </form>
+
+      <p>Already have an account? <a href="">Log in</a></p>
     </div>
   </main>
 </body>
+
 </html>
