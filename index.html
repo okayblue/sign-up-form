@@ -19,32 +19,48 @@
       <p class="credit">Photo by Halie West on unsplash</p>
     </div>
     <div class="right">
-      <p>Sign up!</p>
+      <p class="intro">Sign up <em>now</em> to get started!</p>
 
-      <form action="" method="">
-        <label for="first_name">First Name:</label>
-        <input type="text" id="first_name" name="first_name">
+      <div class="form-container">
+        <form action="" method="" class="signup-form">
+          <fieldset>
+            <div class="form-item">
+              <label for="first_name">First Name</label>
+              <input type="text" id="first_name" name="first_name">
+            </div>
+            <div class="form-item">
+              <label for="last_name">Last Name</label>
+              <input type="text" id="last_name" name="last_name">
+            </div>
+          </fieldset>
 
-        <label for="last_name">Last Name:</label>
-        <input type="text" id="last_name" name="last_name">
+          <fieldset>
+            <div class="form-item">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email">
+            </div>
+            <div class="form-item">
+              <label for="phone_number">Phone Number</label>
+              <input type="tel" id="phone_number" name="phone_number">
+            </div>
+          </fieldset>
 
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email">
-
-        <label for="phone_number">Phone Number:</label>
-        <input type="tel" id="phone_number" name="phone_number">
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password">
-
-        <label for="confirm_password">Confirm Password:</label>
-        <input type="password" id="confirm_password" name="confirm_password">
-
-        <button type="submit">Create account</button>
+          <fieldset>
+            <div class="form-item">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password">
+            </div>
+            <div class="form-item">
+              <label for="confirm_password">Confirm Password</label>
+              <input type="password" id="confirm_password" name="confirm_password">
+            </div>
+          </fieldset>
+      </div>
+      <button type="submit">Create account</button>
 
       </form>
 
-      <p>Already have an account? <a href="">Log in</a></p>
+      <p class="login">Already have an account? <a href="">Log in</a></p>
     </div>
   </main>
 </body>
