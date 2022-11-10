@@ -135,9 +135,15 @@ input:focus {
   box-shadow: 2px 2px 4px rgb(167, 167, 167);
 }
 
-.error {
+input.error {
   outline: none !important;
-  border: 2px solid rgb(255, 69, 69);
+  border: 2px solid rgb(255, 70, 70);
+}
+
+.errormessage {
+  color:  rgb(255, 70, 70);
+  font-size: 1.4rem;
+  padding-top: 3px;
 }
 
 /* links */

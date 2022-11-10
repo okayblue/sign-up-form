@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -25,41 +26,43 @@
       </div>
       <div class="form-container">
         <p class="intro">Let's do this!</p>
-        <form action="" method="" class="signup-form">
+        
+        <form action="" method="post" class="signup-form" onsubmit="return validate()">
           <fieldset>
             <div class="form-item">
               <label for="first_name">First Name</label>
-              <input type="text" id="first_name" name="first_name">
+              <input type="text" id="first_name" name="first_name" required>
             </div>
             <div class="form-item">
               <label for="last_name">Last Name</label>
-              <input type="text" id="last_name" name="last_name">
+              <input type="text" id="last_name" name="last_name" required>
             </div>
           </fieldset>
 
           <fieldset>
             <div class="form-item">
               <label for="email">Email Address</label>
-              <input type="email" id="email" name="email">
+              <input type="email" id="email" name="email" required>
             </div>
             <div class="form-item">
               <label for="phone_number">Phone Number</label>
-              <input type="tel" id="phone_number" name="phone_number">
+              <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
             </div>
           </fieldset>
 
           <fieldset>
             <div class="form-item">
               <label for="password">Password</label>
-              <input type="password" id="password" name="password">
+              <input type="password" id="password" name="password" class="pass" required>
+            <div class="errormessage"></div>
             </div>
             <div class="form-item">
               <label for="confirm_password">Confirm Password</label>
-              <input type="password" id="confirm_password" name="confirm_password">
+              <input type="password" id="confirm_password" name="confirm_password" class="confirm" required>
             </div>
           </fieldset>
       </div>
-      <button type="submit">Create Account</button>
+      <button type="submit" class="submit">Create Account</button>
 
       </form>
 
