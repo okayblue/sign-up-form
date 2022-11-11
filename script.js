@@ -6,14 +6,6 @@ const form = document.querySelector(".signup-form");
 pass.addEventListener('keyup', confirmPass)
 pass2.addEventListener('keyup', confirmPass)
 
-function validate() {
-  if (confirmPass() == false) {
-    return false;
-  } else {
-    return true;
-  }
-}
-
 function confirmPass() {
   if (pass.value !== pass2.value) {
     errormessage.textContent = "* Passwords do not match";
