@@ -163,3 +163,33 @@ input.error {
 .login a:hover {
   color:#1c2b0f;
 }
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  } 
+
+  .logo {
+    margin-top: 10px;
+  }
+
+  .right {
+    align-items: center;
+  }
+
+  .right p, .login, button {
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+
+  .form-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  .signup-form fieldset {
+    justify-content: center;
+  }
+
+}
